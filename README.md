@@ -30,3 +30,7 @@ Enter Meteor app directory:
 Run Chat app:
 
     meteor run
+    
+Access app in browser:
+
+    http://localhost:3000

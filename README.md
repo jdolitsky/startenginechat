@@ -1,25 +1,21 @@
 StartEngine Chat
 ===============
 
-Install Meteor:
+Install Meteor JS:
 
     curl https://install.meteor.com | /bin/sh
     
-Create new meteor app called 'se':
+Create new Meteor app called 'se':
 
     meteor create se
+    
+Remove default Meteor files:
+
+    rm -rf se/*
     
 Clone this repository:
 
     git clone git@github.com:jdolitsky/startenginechat.git
-    
-Copy files from github directory into new Meteor app:
-
-    git clone git@github.com:jdolitsky/startenginechat.git
-    
-Remove default Meteor files
-
-    rm -rf se/*
 
 Copy files from github into Meteor directory:
 

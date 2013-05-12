@@ -1,6 +1,8 @@
 StartEngine Chat
 ===============
 
+### How to run
+
 Install Meteor JS:
 
     curl https://install.meteor.com | /bin/sh

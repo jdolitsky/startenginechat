@@ -1,0 +1,180 @@
+html,body,div {
+
+border:0;
+margin:0;
+padding:0;
+}
+
+#topbar {
+width:100%;
+height:60px;
+background:black;
+background-color: #1b1b1b;
+background-image: -moz-linear-gradient(top, #222222, #111111);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+background-image: -webkit-linear-gradient(top, #222222, #111111);
+background-image: -o-linear-gradient(top, #222222, #111111);
+background-image: linear-gradient(to bottom, #222222, #111111);
+background-repeat: repeat-x;
+border-color: #252525;
+}
+
+#thetime {
+text-align: center;
+color: white;
+font-size: 15px;
+font-weight: bold;
+text-align: right;
+color: white;
+font-size: 15px;
+padding-right: 8px;
+padding-top: 3px;
+display: inline;
+float: right;
+padding-right: 9px;
+padding-top: 19px;
+}
+
+#postit {
+width:100%;
+height:80px;
+background:none;
+position:fixed;
+bottom:0px;
+
+
+position: fixed;
+bottom: 0px;
+height: 86px;
+
+}
+*{
+font-family: 'Open Sans', sans-serif;
+}
+
+.mess {
+width:100%;
+
+text-align: left;
+float: center;
+display: inline-block;
+
+border: 1px solid rgb(190, 190, 190);
+border-radius: 8px;
+margin-bottom: 8px;
+background: rgb(224, 224, 224);
+margin-left: -1px;
+-webkit-box-shadow: 0 0 15px rgba(0,0,0,.17);
+-moz-box-shadow: 0 0 15px rgba(0,0,0,.17);
+box-shadow: 0 0 15px rgba(0,0,0,.17);
+background: white;
+}
+
+.messpan{
+
+  padding:15px;
+}
+#myChans {
+width:90%;
+max-width:500px;
+margin: 0 auto;
+
+margin: 0 auto;
+text-align: center;
+padding-top: 22px;
+}
+
+html {
+background-color: #f0f0f0;
+}
+
+#postitinner {
+height: 100%;
+background: black;
+width: 92%;
+margin: 0 auto;
+border-radius: 25px;
+height: 150%;
+background-color: #1b1b1b;
+background-image: -moz-linear-gradient(top, #222222, #111111);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+background-image: -webkit-linear-gradient(top, #222222, #111111);
+background-image: -o-linear-gradient(top, #222222, #111111);
+background-image: linear-gradient(to bottom, #222222, #111111);
+background-repeat: repeat-x;
+border-color: #252525;
+color:white;
+padding:20px;
+padding-top: 8px;
+}
+
+#leftside {
+display: inline-block;
+float: left;
+width:35%;
+
+}
+
+#rightside {
+display: inline-block;
+float: left;
+width:65%;
+
+}
+
+textarea {
+width: 78%;
+max-width:78%;
+border-radius: 4px;
+}
+
+#uname {
+width: 70%;
+padding: 12px;
+border:0px;
+border-radius: 4px;
+}
+
+#clickme {
+vertical-align: top;
+height: 44px;
+width: 16%;
+float: right;
+cursor:pointer;
+}
+
+#myChans {
+margin-bottom: 124px;
+}
+
+.dd {
+font-size: 10px;
+padding-bottom: 9px;
+padding-right: 15px;
+text-align: right;
+color: rgb(54, 54, 54);
+}
+
+#howmany {
+  text-align: center;
+  margin-top: 8px;
+}
+
+
+.user {
+  padding-left:4px;
+  padding-right:4px;
+  font-weight:bold;
+  color: rgb(28, 185, 28);
+}
+
+#logoimg {
+  padding-top: 3px;
+  padding-left: 7px;
+}
+
+.greenLink {
+  color: rgb(28, 185, 28);
+  font-weight: bold;
+  text-decoration: none;
+}

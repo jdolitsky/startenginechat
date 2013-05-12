@@ -1,0 +1,71 @@
+<head>
+  <title>StartEngine Chat</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+</head>
+<body>
+{{> Clickables}}
+<div class="container-fluid" id="topbar">
+<a href=""><img src="/SE_small.png" id="logoimg"/></a>
+<div id="thetime">{{getCurTime}}</div>
+</div>
+</div>
+  {{> Connections}}
+  {{> Messages}}
+</body>
+
+<template name="Clickables">
+<div id="postit">
+<div id="postitinner">
+<div id="leftside">
+Username<br>
+<input id="uname" type="text" />
+</div>
+<div id="rightside">
+Message<br>
+<textarea id="newmessage">
+</textarea>
+<input type="button" value="Post" id="clickme"/>
+</div>
+</div>
+</div>
+</template>
+<template name="Connections">
+  <div class= "container-fluid" id="cons">
+    <div class="row-fluid" id="howmany">
+      <b>{{ numCons }}</b><br>
+      {{#each AllCons}}
+        <span class="user">
+        {{ this.U }}
+        {{#if isMe this.U}}
+        (you)
+        {{/if}}
+        </span>
+      {{/each}}
+    </div>  
+  </div>
+</template>
+
+<template name="Messages">
+  <div class= "container-fluid" id="myChans">
+    {{#each AllMessages}}
+			  <div class="row-fluid mess">
+			    <div class="messpan">
+				  
+				  {{#if isStatus this}}
+				    {{ this.U}} {{ getStatus this}}
+				  {{else}}
+				  <b>{{ this.U}}:</b> 
+				    {{#each splitMessage this.M}}
+				      {{#if isUrl this}}
+				      <a href="{{this}}" target="_blank" class="greenLink">link</a>
+				      {{else}}
+				        {{this}}
+				      {{/if}}
+				    {{/each}}
+				  {{/if}}
+				  </div>
+				  <div class="dd">{{getTime this.D}}</div>
+			  </div>
+    {{/each}}
+  </div>
+</template>

@@ -1,6 +1,8 @@
 StartEngine Chat
 ===============
 
+![](http://socialmediaweek.org/losangeles/files/2012/08/start-engine-logo.jpg)
+
 ### How to run
 
 Install Meteor JS:
